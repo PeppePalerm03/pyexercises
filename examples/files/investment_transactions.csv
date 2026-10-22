@@ -1,0 +1,4 @@
+Asset,Type,Quantity,Price,Date
+Apple,Buy,10.0,150.0,2026-10-22
+Microsoft,Buy,5.0,420.0,2026-10-21
+Tesla,Sell,3.0,250.0,2026-10-20
