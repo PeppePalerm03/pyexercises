@@ -37,22 +37,26 @@ DELIVERABLE
 
 
 # Your code below
+
+# Set the secret word, maximum attempts, and starting values.
 secret_word = "python"
 attempts = 0
 max_attempts = 5
 guessed_correctly = False
+# Keep asking until the word is correct or 5 attempts are used.
 while attempts < max_attempts and not guessed_correctly:
     guess = input("Guess the secret word: ")
+    # Remove surrounding spaces and ignore capitalization.
     guess = guess.strip().lower()
-
+    # Count each guess as one attempt.
     attempts += 1
-
+    # Check the guess and display the appropriate message.
     if guess == secret_word:
         guessed_correctly = True
         print("Congratulations! You guessed correctly!")
     else:
         print("Incorrect guess. Try again!")
-
+# Display the number of attempts and whether the user won or lost.
 print("\n--- GAME SUMMARY ---")
 print("Total attempts:", attempts)
 
@@ -61,3 +65,11 @@ if guessed_correctly:
 else:
     print("Result: You lost!")
     print("The secret word was:", secret_word)
+
+# CHECK IT YOURSELF:
+# Test 1: Entered 5 incorrect guesses.
+# Result: The loop stopped after 5 attempts and reported a loss.
+#
+# Test 2: Entered "  PYTHON  " with capitals and spaces.
+# Result: The program accepted the answer on the first attempt.
+# The summary reported 1 attempt and a win.
