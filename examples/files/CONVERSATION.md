@@ -52,3 +52,61 @@ I also learned how to create a CSV file, write its header once and append new ro
 The program ran successfully and passed the required three-run test.
 
 This document summarizes my AI-assisted work rather than reproducing the complete conversation.
+
+---
+
+# Exercise 7.1 — AI Tutor Conversation Summary
+
+## AI tutor used
+ChatGPT (OpenAI)
+
+## Purpose
+I used ChatGPT as a tutor to understand how to read, clean, sort and save data from a text file using Python.
+
+## Problems identified in names.txt
+- Inconsistent capitalization.
+- Extra spaces and tabs.
+- Empty lines.
+- Duplicate names.
+- Different name formats, including "Last, First".
+- Multiword surnames such as "van Dijk".
+
+## My decisions
+I decided to:
+- Remove blank lines and unnecessary spaces.
+- Standardize capitalization.
+- Remove duplicate names.
+- Convert names written as "Last, First" into "First Last".
+- Sort names alphabetically by surname.
+- Save the results in a separate file without modifying the original.
+
+## How ChatGPT helped
+ChatGPT helped me:
+- Understand the assignment requirements.
+- Identify problems in the original file.
+- Develop the Python program.
+- Understand file reading, string cleaning and sorting.
+- Resolve a FileNotFoundError caused by the input filename.
+- Verify the output and document the results.
+
+## Testing
+I ran the program using the original names.txt file.
+
+Results:
+- Original file: 20 lines.
+- Cleaned output: 14 unique names.
+- First sorted name: Karim Benali.
+- Last sorted name: Lucas van Dijk.
+- Output file: cleaned_names.txt.
+
+The program successfully created the cleaned file without modifying the original.
+
+## What I learned
+I practiced reading and writing text files, using loops, removing duplicates and sorting data with a custom function.
+
+I also learned how to troubleshoot file paths and handle inconsistent data formats.
+
+## Final result
+The program ran successfully and produced the expected cleaned output.
+
+This section summarizes my AI-assisted work rather than reproducing the complete conversation.
