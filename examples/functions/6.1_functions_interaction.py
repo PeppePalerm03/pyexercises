@@ -46,12 +46,13 @@ DELIVERABLE
 
 
 # Your code below
+# Calculate the arithmetic average of the investment returns.
 def calculate_average(returns):
     if len(returns) == 0:
         return 0
     return sum(returns) / len(returns)
 
-
+# Count how many investment returns exceed a given threshold.
 def count_above_threshold(returns, threshold):
     count = 0
     for value in returns:
@@ -59,7 +60,7 @@ def count_above_threshold(returns, threshold):
             count += 1
     return count
 
-
+# Count the total number of investment returns in the list.
 def count_returns(returns):
     return len(returns)
 # Original data from Exercise 4.0
@@ -74,6 +75,8 @@ print("Test 2:", count_above_threshold([5, 10, 15], 10))
 # TEST 3: Input [4, 8, 12, 16] -> Expected count: 4
 print("Test 3:", count_returns([4, 8, 12, 16]))
 
+# Combine the three functions to calculate the average return,
+# count returns above average, and count total observations.
 def analyze_returns(returns):
     average = calculate_average(returns)
     above_average = count_above_threshold(returns, average)
