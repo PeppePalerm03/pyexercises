@@ -40,3 +40,14 @@ average_return = sum(returns) / len(returns)
 for position, annual_return in enumerate(returns, start=1):
     difference = annual_return - average_return
     print(f"Asset {position}: Return = {annual_return}%, Difference from average = {difference:.2f} percentage points")
+
+# This list comes from Exercise 4.0.
+# I calculate the average return before the loop.
+# The loop goes through each asset and calculates its
+# difference from the average return.
+
+# Check it yourself:
+# Tested with 8 returns.
+# The program printed exactly 8 lines, one per asset.
+# The average return was 8.625%.
+# The first asset's difference was +3.375 percentage points.
