@@ -53,3 +53,10 @@ print("Average of last 3 returns:", calculate_average_return(returns[-3:]))
 
 # Test with an empty list
 print("Average of empty list:", calculate_average_return([]))
+
+# CHECK IT YOURSELF:
+# Input: []
+# Result: 0
+# This behavior is acceptable for this exercise because it
+# prevents division by zero. However, 0 is a convention,
+# not the mathematical average of an empty list.
