@@ -163,10 +163,6 @@ def play_game():
         print("No valid scenarios available. Game cannot start.")
         return name, budget, reputation, history
     
-    # Do not save a result if the game never started.
-    if not history:
-        print("No game was played. Nothing will be saved.")
-        return
     random.shuffle(scenarios)
 
     for day, scenario in enumerate(scenarios[:10], start=1):
@@ -286,7 +282,10 @@ def save_results(name, budget, reputation, title):
 # Connect the game, final results and CSV saving.
 def main():
     name, budget, reputation, history = play_game()
-
+    # Do not save a result if the game never started.
+    if not history:
+        print("No game was played. Nothing will be saved.")
+        return
     show_final_results(budget, reputation, history)
 
     if budget <= 0 or reputation <= 0:
